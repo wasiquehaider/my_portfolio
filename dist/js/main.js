@@ -62,8 +62,7 @@ $(document).ready(function() {
   $(".css").animate({ width: "85%" }, 2000);
   $(".js").animate({ width: "75%" }, 2000);
   $(".react").animate({ width: "70%" }, 2000);
-  $(".node").animate({ width: "50%" }, 2000);
-  $(".jquery").animate({ width: "70%" }, 2000);
+  $(".node").animate({ width: "60%" }, 2000);
   $(".android").animate({ width: "65%" }, 2000);
 });
 
