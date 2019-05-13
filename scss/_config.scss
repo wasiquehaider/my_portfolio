@@ -1,0 +1,55 @@
+$primary-color: #283b4a;
+$secondary-color: #10e6e9;
+$third-color: #178486;
+$black-color: #000000;
+$dark-color: #343a40;
+$light-color: #f4f4f4;
+$danger-color: #dc3545;
+$success-color: #28a745;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+//Button
+.btn {
+  display: inline-block;
+  background: $primary-color;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+
+  &:hover {
+    background: lighten($dark-color, 20%);
+    color: #fff;
+  }
+}
