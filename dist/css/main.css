@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 .btn {
   display: inline-block;
-  background: #283b4a;
+  background: #10e6e9;
   color: #fff;
   padding: 0.4rem 1.3rem;
   border: none;
@@ -504,90 +504,13 @@ section#projects {
     margin-top: 10px;
     margin-bottom: 10px; }
 
-.subContainer
-*:focus {
-  outline: none; }
-
-.inputGroup {
-  position: relative;
-  margin-bottom: 30px; }
-  .inputGroup label {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    font-family: Trebuchet MS;
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase; }
-  .inputGroup input,
-  .inputGroup textarea {
-    display: block;
-    width: 280px;
-    border: none;
-    border-bottom: 1px solid #757575;
-    left: 25px;
-    padding: 5px;
-    font-family: Trebuchet MS;
-    background: none;
-    color: #ccc; }
-  .inputGroup input:focus ~ label,
-  .inputGroup input:valid ~ label,
-  .inputGroup textarea:focus ~ label,
-  .inputGroup textarea:valid ~ label {
-    top: -20px;
-    transition: all 0.3s ease;
-    font-size: 13px; }
-  .inputGroup input:focus ~ .inputBar:before,
-  .inputGroup input:focus ~ .inputBar:after,
-  .inputGroup textarea:focus ~ .inputBar:before,
-  .inputGroup textarea:focus ~ .inputBar:after {
-    width: 50%; }
-  .inputGroup textarea {
-    height: 100px;
-    width: 280px;
-    overflow: auto;
-    resize: none; }
-  .inputGroup .inputBar {
-    position: relative;
-    display: block;
-    width: 290px; }
-    .inputGroup .inputBar:before, .inputGroup .inputBar:after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      width: 0;
-      background: white;
-      height: 2px;
-      transition: all 0.2s ease; }
-    .inputGroup .inputBar:after {
-      right: 50%; }
-    .inputGroup .inputBar:before {
-      left: 50%; }
-
-.sendBtn {
-  background-color: white;
-  border: none;
-  padding: 15px 0;
-  margin: 0;
-  width: 290px;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  font-family: Trebuchet MS;
-  font-size: 15px;
-  border-radius: 5px;
-  box-shadow: 0 6px #a1a1a1;
-  position: relative;
-  cursor: pointer; }
-  .sendBtn:hover {
-    box-shadow: 0 4px #a1a1a1;
-    top: 2px; }
-  .sendBtn:active {
-    top: 6px;
-    box-shadow: 0 0; }
+section#contact {
+  padding: 1rem 0rem;
+  background: #e8e8e8; }
+  section#contact .centered-text {
+    text-align: center; }
+  section#contact .lg-heading {
+    font-size: 3rem; }
 
 #main-footer {
   text-align: center;
@@ -764,3 +687,85 @@ section#projects {
 .gold {
   background: linear-gradient(to bottom right, #e6ce6a 0%, #b7892b 100%);
   color: #b7892b; }
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%; }
+
+.social-media-list li a {
+  color: #fff; }
+
+.social-media-list li {
+  position: relative;
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #178486;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+
+.social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #10e6e9;
+  transition: all 0.2s ease-in-out; }
+
+.social-media-list li:hover {
+  background-color: #fff; }
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65); }
+
+.social-media-list li:hover a {
+  color: #10e6e9; }
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center; }
+
+hr {
+  border-color: rgba(255, 255, 255, 0.8); }
+
+/* Begin Media Queries*/
+@media screen and (max-width: 760px) {
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px; }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px; } }
+
+@media screen and (max-width: 569px) {
+  .social-media-list {
+    left: 0; }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem; }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px; } }
